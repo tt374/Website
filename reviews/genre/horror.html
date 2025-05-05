@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Your Name, IS117-XXX, Spring 2024 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kawaii Manhwa Hub | Horror</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
+    <style>
+        .horror-card {
+            border-radius: 15px;
+            border: 2px solid rgba(255, 182, 193, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .horror-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+        }
+        
+        .spooky-badge {
+            background: #d8a7ca;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="../../index.html">
+                <i class="bi bi-stars me-2"></i> Kawaii Manhwa Hub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-book me-1"></i> Reviews
+                        </a>
+                        <ul class="dropdown-menu bg-pink-light">
+                            <li><a class="dropdown-item active" href="../genres.html">By Genre</a></li>
+                            <li><a class="dropdown-item" href="../latest.html">Latest</a></li>
+                            <li><a class="dropdown-item" href="../top-rated.html">Top Rated</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Horror Header -->
+    <header class="py-4 bg-pink text-center text-white rounded-bottom mb-4">
+        <div class="container">
+            <h1 class="display-5 fw-bold"><i class="bi bi-moon-stars me-2"></i> Horror Manhwa</h1>
+            <p class="lead mb-0">Spooky stories with just the right amount of chills!</p>
+        </div>
+    </header>
+
+    <!-- Horror Recommendations -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <!-- Sweet Home -->
+            <div class="col-md-4">
+                <div class="card horror-card h-100 border-0 shadow-sm position-relative">
+                    <span class="spooky-badge position-absolute top-0 end-0 m-2">Thriller</span>
+                    <img src="../../images/sweet-home.jpg" class="card-img-top rounded-top" alt="Sweet Home">
+                    <div class="card-body bg-white rounded-bottom">
+                        <h3 class="text-pink">Sweet Home</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">by Kim Carnby</span>
+                            <span class="text-warning">
+                                <i class="bi bi-star-fill"></i> 4.8
+                            </span>
+                        </div>
+                        <p class="card-text">Monsters emerge as people transform according to their darkest desires in this apocalyptic horror.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">15M+ views</small>
+                            <a href="#" class="btn btn-pink-sm rounded-pill">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bastard -->
+            <div class="col-md-4">
+                <div class="card horror-card h-100 border-0 shadow-sm position-relative">
+                    <span class="spooky-badge position-absolute top-0 end-0 m-2">Psychological</span>
+                    <img src="../../images/bastard.jpg" class="card-img-top rounded-top" alt="Bastard">
+                    <div class="card-body bg-white rounded-bottom">
+                        <h3 class="text-pink">Bastard</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">by Kim Carnby</span>
+                            <span class="text-warning">
+                                <i class="bi bi-star-fill"></i> 4.7
+                            </span>
+                        </div>
+                        <p class="card-text">A son discovers his father is a serial killer in this intense psychological thriller.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">12M+ views</small>
+                            <a href="#" class="btn btn-pink-sm rounded-pill">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pigpen -->
+            <div class="col-md-4">
+                <div class="card horror-card h-100 border-0 shadow-sm position-relative">
+                    <span class="spooky-badge position-absolute top-0 end-0 m-2">Mystery</span>
+                    <img src="../../images/pigpen.jpg" class="card-img-top rounded-top" alt="Pigpen">
+                    <div class="card-body bg-white rounded-bottom">
+                        <h3 class="text-pink">Pigpen</h3>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">by Carnby Kim</span>
+                            <span class="text-warning">
+                                <i class="bi bi-star-fill"></i> 4.6
+                            </span>
+                        </div>
+                        <p class="card-text">A man wakes up on a beach with no memory, trapped in a twisted experiment.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">9M+ views</small>
+                            <a href="#" class="btn btn-pink-sm rounded-pill">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Horror Description -->
+        <div class="card horror-card border-0 shadow-sm mt-4">
+            <div class="card-body bg-white rounded">
+                <h4 class="text-pink"><i class="bi bi-moon-stars me-2"></i> About Horror Manhwa</h4>
+                <p>Horror manhwa deliver chilling stories with:</p>
+                <ul>
+                    <li>Psychological depth and suspense</li>
+                    <li>Unique monster designs and apocalyptic scenarios</li>
+                    <li>Twists that keep you guessing</li>
+                    <li>Just enough cuteness to balance the scares</li>
+                </ul>
+                <a href="../latest.html" class="btn btn-pink rounded-pill">
+                    <i class="bi bi-book me-2"></i> View New Horror Releases
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-kawaii py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white">
+                        <i class="bi bi-c-circle"></i> 2024 Kawaii Manhwa Hub
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Terms</a>
+                    <a href="#" class="text-white me-3">Privacy</a>
+                    <a href="../../contact.html" class="text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

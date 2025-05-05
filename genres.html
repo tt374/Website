@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Your Name, IS117-XXX, Spring 2024 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kawaii Manhwa Hub | Genres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <style>
+        /* Mirroring home page styles */
+        .hero-genres {
+            background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(255, 182, 193, 0.8)), 
+                        url('../images/genres-banner.jpg');
+            background-size: cover;
+            border-radius: 0 0 20px 20px;
+            margin: 0 15px;
+        }
+        
+        .genre-feature-card {
+            border-radius: 15px !important;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid rgba(255, 182, 193, 0.3);
+        }
+        
+        .genre-feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2) !important;
+        }
+        
+        .genre-badge {
+            background: var(--pink-dark);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="bg-cream">
+
+    <!-- Same Navbar as Homepage -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="../index.html">
+                <i class="bi bi-stars me-2"></i> Kawaii Manhwa Hub
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="reviewsDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-book me-1"></i> Reviews
+                    </a>
+                    <ul class="dropdown-menu bg-pink-light">
+                        <li><a class="dropdown-item" href="genres.html">By Genre</a></li>
+                        <li><a class="dropdown-item" href="reviews/latest.html">Latest</a></li>
+                        <li><a class="dropdown-item" href="reviews/top-rated.html">Top Rated</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Include same navbar as homepage -->
+        </div>
+    </nav>
+
+    <!-- Hero Banner (Like Homepage) -->
+    <header class="hero-genres text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white"><i class="bi bi-tags me-2"></i> Explore Genres</h1>
+            <p class="lead mb-0 text-white">Find your perfect kawaii story!</p>
+        </div>
+    </header>
+
+    <!-- Genre Cards (Homepage Style) -->
+    <div class="container mb-5">
+        <h2 class="text-center text-pink mb-4"><i class="bi bi-bookmark-heart me-2"></i> Popular Categories</h2>
+        <div class="row g-4">
+            <!-- Romance -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card genre-feature-card h-100 border-0 shadow-sm">
+                    <img src="../images/genre-romance.jpg" class="card-img-top rounded-top" alt="Romance manhwa">
+                    <div class="card-body bg-white rounded-bottom">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h3 class="text-pink mb-2"><i class="bi bi-hearts me-2"></i> Romance</h3>
+                            <span class="genre-badge">Most Popular</span>
+                        </div>
+                        <p class="card-text">Sweet love stories that'll make you blush!</p>
+                        <a href="reviews/genre/romance.html" class="btn btn-pink rounded-pill">
+                            <i class="bi bi-book me-2"></i> View All
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fantasy -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card genre-feature-card h-100 border-0 shadow-sm">
+                    <img src="../images/genre-fantasy.jpg" class="card-img-top rounded-top" alt="Fantasy manhwa">
+                    <div class="card-body bg-white rounded-bottom">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h3 class="text-pink mb-2"><i class="bi bi-stars me-2"></i> Fantasy</h3>
+                            <span class="genre-badge">Trending</span>
+                        </div>
+                        <p class="card-text">Magical worlds with adorable creatures!</p>
+                        <a href="reviews/genre/fantasy.html" class="btn btn-pink rounded-pill">
+                            <i class="bi bi-book me-2"></i> View All
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horror -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card genre-feature-card h-100 border-0 shadow-sm">
+                    <img src="../images/genre-horror.jpg" class="card-img-top rounded-top" alt="Horror manhwa">
+                    <div class="card-body bg-white rounded-bottom">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h3 class="text-pink mb-2"><i class="bi bi-moon-stars me-2"></i> Horror</h3>
+                            <span class="genre-badge">Spooky-Cute</span>
+                        </div>
+                        <p class="card-text">Ghost stories with kawaii twists!</p>
+                        <a href="reviews/genre/horror.html" class="btn btn-pink rounded-pill">
+                            <i class="bi bi-book me-2"></i> View All
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Same Footer as Homepage -->
+    <footer class="footer-kawaii py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white">
+                        <i class="bi bi-c-circle"></i> 2024 Kawaii Manhwa Hub
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Terms</a>
+                    <a href="#" class="text-white me-3">Privacy</a>
+                    <a href="../contact.html" class="text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
